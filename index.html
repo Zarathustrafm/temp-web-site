@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarathustra's Shrine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sytle/Global.css">
+    <link rel="stylesheet" href="./sytle/Main.css">
+    <link rel="stylesheet" media="max-width:700px" href="./sytle/Phone.css">
+    <link rel="icon" href="./res/hithere.gif">
+</head>
+<body>
+    <div class="greetings">
+        <img src="./res/hithere.gif" alt="kokoZarathustra" id="imgkoko">
+        <h1 id="greeting" class="color-blue"> Hi, I'm Zarathustra!</h1>
+        <h3 id="greeted">Why are you here?</h3>
+        <a href="#navBar"><img id="imgscroll" src="./res/scroll.png" alt="scroll to content" width="50" height="50"></a>
+    </div>
+
+    <div class="navbar" id="navBar">
+        <nav>
+            <h1><b>ZARATHUSTRA</b></h1>
+            <h2>an npc on internet</h2> 
+            <ul>
+                <li><a href="#content">Home</a></li>
+                <li><a href="nopage.html">Music</a></li>
+                <li><a href="nopage.html">Blog</a></li>
+                <li><a href="nopage.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content" id="content">
+            <div class="mememe">
+                <div class="zarathustra">
+                    <h2>This is Zarathustra</h2>
+                    <img src="./res/me.jpg" alt="Zarathustra_Itself" width="300" height="300">
+                </div>
+                <p>I'm a lonely developer and content creator. I create music pieces from time to time. I
+                    also used Medium as a blog page, they will soon be uploaded here. Feel free to check them out.</p>
+            </div>
+            <div class="actuals">
+                <h3>In My Network</h3>
+                <ul id="network">
+                    <li><a href="https://www.youtube.com/channel/UCs9fonFdo2sj26ryd_tjXQw/featured">YouTube Channel</a>: I post music videos whenever I want.</li>
+                    <li><a href="https://zarathustrafm.bandcamp.com/">Bandcamp</a>: Actively using it, +free experimental songs.</li>
+                    <li><a href="https://twitter.com/Zarathustrafm">Twitter</a>: Useless internet platform I use mainly.</li>
+                    <li><a href="https://zarathustrax.medium.com/">Medium</a>: My old blog-like idea based texts.</li>
+                    <li><a href="nopage.html">Blog</a>: Will do.</li>
+                </ul>
+                <br><br><br>
+                <h3>Hobbies & Ventures</h3>
+                <ul id="hobbies">
+                    <li class="color-bgreen">I love to play anime songs with classical guitar, I would love to have an electric guitar and bang with it but I
+                        live in a society where this is only possible with a reasonable revenue.</li>
+                    <li class="color-yellow">I'm a beginner-level programmer on Java, C, C++ and web stuff. There is nothing valuable on my GitHub page,
+                        don't skim over if you don't want to waste time.</li>
+                    <li class="color-bblue">I use linux and try to maintain its philosophy everywhere possible.</li>
+                    <li class="color-red">I like to learn and talk about philosophical thoughts as well as I like to chit-chat about scientific facts.
+                        Especially postmodern ones (hehehe).</li>
+                    <li class="color-dgreen">I'm a physics major in Middle East Technical University, planning to postdeconstruct the holy quantum mechanics
+                        into grammatology and unreveal its mysteries.</li>
+                    <li class="color-blue">I like to write stories or essays (even have an archive filled with bunch of them), more like my own unique
+                        style and all are in Turkish.</li>
+                </ul>
+                <br><br><br>
+                <h3>Contact Me</h3>
+                <ul id="contact">
+                    <li><a href="mailto:aliucar@pm.me" target="_blank">Email me!</a></li>
+                    <li>Or just use other social media platforms.</li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("navBar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+        
+</body>
+</html>
